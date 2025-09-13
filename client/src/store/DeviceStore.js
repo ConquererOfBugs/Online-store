@@ -16,6 +16,11 @@ export default class DeviceStore {
             {id: 2, name: "Iphone 17", price: 110000, rating: 0, img: "8e640bf6-71fa-43b6-93fd-6e2d1e6e9849.jpg", typeId: 2, brandId: 2},
             {id: 3, name: "Iphone 17", price: 110000, rating: 0, img: "8e640bf6-71fa-43b6-93fd-6e2d1e6e9849.jpg", typeId: 2, brandId: 2}
         ]
+
+        this._selectedType = {}
+        this._selectedBrand = {}
+        this._selectedDevice = {}
+
         makeAutoObservable(this)
     }
 
@@ -31,6 +36,16 @@ export default class DeviceStore {
         this._devices = device
     }
 
+    setSelectedType(type) {
+        this._selectedType = type
+    }
+
+    setSelectedBrand(brand) {
+        this._selectedBrand = brand
+    }
+
+
+
     get types() {
         return this._types
     }
@@ -42,4 +57,16 @@ export default class DeviceStore {
     get devices() {
         return this._devices
     }
+
+    get selectedType() {
+        return this._selectedType
+    }
+    
+    get selectedBrand() {
+        return this._selectedBrand
+    }
+    get selectedDevice() {
+        return this._selectedDevice
+    }
+
 }

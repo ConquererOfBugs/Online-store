@@ -91,14 +91,14 @@ h1{
 	cursor: pointer;
 }
 #signin p {
-	color: rgb(79, 85, 97);
+	color: rgb(139, 149, 170);
 	padding: 0 20px;
 	font-weight: 700;
-	font-size: 12px;
+	font-size: 15px;
 	margin: 5px 0 0 0;
 }
 #signin p > a{
-	color: rgb(111, 119, 135);
+	color: rgb(161, 174, 200);
 	text-decoration: none;
 }
 #signin p > a:hover{

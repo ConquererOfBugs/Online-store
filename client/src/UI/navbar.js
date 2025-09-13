@@ -17,7 +17,7 @@ const NavBar = observer(() => {
 
                 {user._isAuth ? 
                     <Nav className="ml-auto">
-                        <Nav.Link href="">Войти</Nav.Link>
+                        <Nav.Link onClick={() => user.setAuth(false)}>Выйти</Nav.Link>
                         <Nav.Link href="">Админ панель</Nav.Link>
                     </Nav>
                     :
