@@ -1,0 +1,10 @@
+.list{
+    position: relative;
+    left: 450px;
+    bottom: 300px;
+}
+
+.flex {
+    justify-content: space-between;
+    display: flex;
+}

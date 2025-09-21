@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react-lite';
-import React, { useContext } from 'react';
+import React, { useContext} from 'react';
 import {ListGroup} from 'react-bootstrap';
 import { Context } from '..';
 import brand from '../CSS/brandbar.module.css'
@@ -7,6 +7,7 @@ import brand from '../CSS/brandbar.module.css'
 const BrandBar = observer(() => {
 
     const {device} = useContext(Context)
+
 
     return (
         <ListGroup className={brand.row}>
