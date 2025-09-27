@@ -10,18 +10,16 @@ const Shop = () => {
     return (
         <Container>
             <Row className='mt-2'>
-                <Col md={3}>
+                <Col md={3} style={{width: 0, margin: 0}}>
                     <TypeBar/>
                 </Col>
-                <div style={{display: "felx"}}>
-                    <Col md={9}>
-                        <BrandBar/>
-                    </Col>
+                <Col md={9} style={{width: 0, margin: 0}}>
+                    <BrandBar/>
+                </Col>
 
-                    <Col md={9}>
-                        <DeviceList/>
-                    </Col>
-                </div>
+                <Col md={9}>
+                    <DeviceList/>
+                </Col>
             </Row>
         </Container>
     );
